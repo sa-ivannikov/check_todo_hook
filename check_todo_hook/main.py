@@ -22,7 +22,7 @@ def main(argv: Sequence[str] | None = None):
                     if pattern in line:
                         comment = line.split(pattern)[1]
                         if LATER_PATTERN not in comment:
-                            print(f'{filename}: {i}: detected {pattern.strip(b":")} ')
+                            print(f'{filename}: {i}: detected {pattern.decode().strip(":")} ')
                             retcode = 1
 
     return retcode
