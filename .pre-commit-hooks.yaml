@@ -1,0 +1,5 @@
+- id: check-todo-hook
+  name: Check todos
+  description: Check TODO and FIXME patterns in files
+  entry: check-todo-hook
+  language: python
